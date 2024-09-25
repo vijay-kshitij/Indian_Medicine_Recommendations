@@ -1,6 +1,6 @@
 # Indian Medicine Recommendation System for Cold-Flu-Fever
 
-[Link Text](https://indianmedicinerecommendations.streamlit.app/)
+[Recommendation Model Link](https://indianmedicinerecommendations.streamlit.app/)
 
 This project is a **LLM-based recommendation system** designed to provide personalized medicine recommendations for common ailments such as colds, flu, and fever, available in the Indian market. Users can input their symptoms and get medicine recommendations based on data stored in a **ChromaDB vector database**. The application uses Groq's Llama 3.1 model and LangChain for processing and generating recommendations.
 
