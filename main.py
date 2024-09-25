@@ -96,7 +96,7 @@ elif page == "Get GROQ API Key":
 
     st.subheader("Step 4: Generate a New API Key")
     st.write("""
-            Click the **Create API Key** button and give it a descriptive name.
+            Click the **Create API Key** button and give it a name.
 
             **Important:** You won't be able to view the API key again once you leave the page, so make sure to save it somewhere safe.
 
