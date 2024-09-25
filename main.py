@@ -26,7 +26,7 @@ st.markdown(background_image, unsafe_allow_html=True)
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["About", "Get GROQ API Key", "Indian Meds"])
+page = st.sidebar.radio("Go to", ["About", "Get GROQ API Key", "Recommendation App"])
 
 # Ask the user for the Groq API key
 st.sidebar.subheader("Enter your Groq API key")
@@ -57,7 +57,10 @@ if page == "About":
     Body Aches,
     Difficulty Breathing,
     And more...
-
+    
+    Please note that the database powering this system contains only 306 medicines, so the recommendations 
+    provided may be limited in scope.
+    
     However, it is important to note that this project is intended for demonstration purposes only. 
     The recommendations provided by this model should not be considered 100% accurate or definitive. 
     They are not a replacement for professional medical advice. Always consult with a healthcare provider before 
@@ -106,9 +109,10 @@ elif page == "Get GROQ API Key":
             """)
 
 # Indian Meds Recommender Page
-elif page == "Indian Meds":
+elif page == "Recommendation App":
     if st.session_state["groq_api_key"]:
         run_indian_meds_recommender(st.session_state["groq_api_key"])  # Pass the API key to the recommender function
     else:
-        st.error("Please enter your Groq API key in the sidebar and press enter.")
+        st.error("Please enter your Groq API key in the sidebar and press enter.\nFor instructions, see the 'Get GROQ API Key' section.")
+
 
