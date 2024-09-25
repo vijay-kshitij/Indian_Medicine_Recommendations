@@ -2,7 +2,7 @@
 
 [Recommendation Model Link](https://indianmedicinerecommendations.streamlit.app/)
 
-This project is a **LLM-based recommendation system** designed to provide personalized medicine recommendations for common ailments such as colds, flu, and fever, available in the Indian market. Users can input their symptoms and get medicine recommendations based on data stored in a **ChromaDB vector database**. The application uses Groq's Llama 3.1 model and LangChain for processing and generating recommendations.
+This project is a **LLM-based recommendation system** designed to provide personalized medicine recommendations for common ailments such as colds, flu, and fever. Users can input their symptoms and get medicine recommendations based on data stored in a **ChromaDB vector database**. The application uses Groq's Llama 3.1 model and LangChain for processing and generating recommendations. The database has **306** data points and all the medicines are of the Indian market.
 
 ## Technology Stack
 
