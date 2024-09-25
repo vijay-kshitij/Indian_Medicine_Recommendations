@@ -1,3 +1,8 @@
+# To make streamlit cloud sqlite3 dependency compatible
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from indian_rec import run_indian_meds_recommender
 import os
