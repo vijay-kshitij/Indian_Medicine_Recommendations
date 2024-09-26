@@ -77,7 +77,7 @@ def run_indian_meds_recommender(groq_api_key):
         temperature=0
     )
 
-    st.title("Indian Medicines Recommendation System for Cold-Flu-Fever")
+    st.title("Medicine Recommender for Cold-Flu-Fever")
     st.write("Get personalized medicine recommendations based on your symptoms")
 
     # Option for user input: Search bar and symptom selection
